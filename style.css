@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(Assets/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 1));
+}
+
+nav {
+    max-width: 75vw;
+    height: 100px;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: clamp(100px, 25vw, 150px);
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.nav-btn {
+    display: flex;
+    gap: 15px;
+}
+
+nav button {
+    position: relative;
+    z-index: 2;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 100px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 15px;
+    padding: 25px;
+}
+
+.hero> :first-child {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: clamp(0.8rem, 2vw, 1.25rem);
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero :nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0 5px;
+    width: 100%;
+}
+
+.btn {
+    padding: 5px clamp(10px, 2vw, 15px);
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus,
+input:focus {
+    outline: 2px solid red;
+    /* or a custom color */
+}
+
+.btn-sn:hover,
+.btn-getstarted:hover {
+    background-color: darkred;
+}
+
+
+.btn-sn {
+    background-color: red;
+    border: transparent;
+}
+
+.btn-getstarted {
+    width: max-content;
+    background-color: red;
+    border: transparent;
+    font-size: clamp(0.7rem, 2vw, 1.1rem);
+    padding: 0 clamp(1rem, 3vw, 2rem);
+    height: clamp(45px, 6vw, 60px);
+}
+
+.hero input {
+    flex: 1;
+    max-width: clamp(150px,30vw,300px);
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.8rem clamp(1rem, 3vw, 1.8rem);
+    border: transparent;
+    border-radius: 5px;
+    height: clamp(45px, 6vw, 60px);
+}
+
+.hero input::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(50, 50, 50);
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: 2rem auto;
+}
+
+.text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5rem 0;
+}
+
+.text> :nth-child(1) {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-weight: bold;
+}
+
+.text> :nth-child(2) {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.sec-img {
+    position: relative;
+}
+
+.sec-img img {
+    width: 40vw;
+    position: relative;
+    z-index: 2;
+}
+
+.first .sec-img video {
+    position: absolute;
+    width: 30vw;
+    left: 13%;
+    top: 20%;
+}
+
+.third .sec-img video {
+    position: absolute;
+    width: 30vw;
+    left: 12.8%;
+    top: 20%;
+}
+
+.faq {
+    width: 70vw;
+    color: white;
+    margin: 2.5rem auto;
+}
+
+.faq h2 {
+    font-size: clamp(1.7rem, 3vw, 2.7rem);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.faq-item {
+    background: #2d2d2d;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(1rem, 2vw, 1.4rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-question:hover {
+    background-color: rgb(80, 80, 80);
+    transition: 0.5s ease;
+}
+
+.faq-question .icon {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+/* Hide checkbox */
+.faq-item input {
+    display: none;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background: #181818;
+    padding: 0 1.3rem;
+    font-size: 1.05rem;
+    transition: max-height 0.5s ease, padding 0.4s ease;
+}
+
+/* When checkbox is checked, show answer */
+.faq-item input:checked~.faq-answer {
+    max-height: max-content;
+    padding: 1.3rem;
+}
+
+/* Rotate + sign when open */
+.faq-item input:checked+.faq-question .icon {
+    transform: rotate(45deg);
+}
+
+
+
+footer {
+    color: white;
+    max-width: 70vw;
+    margin: 2rem auto;
+}
+
+footer .questions {
+    padding: 1.8rem 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+
+.footer a {
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* For small Laptops */
+@media (max-width: 1024px) {
+    nav {
+        max-width: 80vw;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    nav {
+        max-width: 85vw;
+    }
+
+    .section {
+        flex-wrap: wrap;
+    }
+
+    .sec-img img {
+        width: 60vw;
+    }
+
+    .first .sec-img video {
+        width: 45vw;
+    }
+
+    .third .sec-img video {
+        width: 45vw;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+
+    nav {
+        max-width: 90vw;
+    }
+}
