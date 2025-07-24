@@ -19,3 +19,4 @@ A Netflix UI clone built with HTML and CSS, featuring a modern layout, interacti
 ---
 
 ## 📸 Screenshots  
+![App Screenshot](Assets/Screenshot_Netflix_clone.png)
